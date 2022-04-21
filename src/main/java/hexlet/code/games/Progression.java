@@ -11,9 +11,7 @@ public class Progression {
     private static final String DESCRIPTION =
             "What number is missing in this progression?";
 
-    // В идеале прогрессия должна быть быть последовательною чисел, а не строк.
-    // Но в данном случае делаем упрощение - последовательность чисел представленных строками,
-    // потому как реализация значительно усложняется.
+
     private static String[] makeProgression(int first, int step, int length) {
         String[] progression = new String[length];
 

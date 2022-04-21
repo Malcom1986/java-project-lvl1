@@ -8,7 +8,6 @@ public class Calc {
     private static final int MAX = 20;
     private static final char[] OPERATORS = {'+', '-', '*'};
 
-    // Описание задается на уровне модуля (а не внутри методов), так проще видеть ключевые части игры
     private static final String DESCRIPTION =
             "What is the result of the expression?";
 
@@ -21,8 +20,6 @@ public class Calc {
             case '*':
                 return number1 * number2;
             default:
-                // Исключения еще не проходились, но можно намекнуть что это та самая ситуация
-                // В принципе на этом этапе достаточно, что тут будет обычный break
                 throw new RuntimeException("Unknown operator: " + operator);
         }
     }
